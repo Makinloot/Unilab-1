@@ -1,0 +1,38 @@
+:root {
+  --ff-primary: "helvetica";
+  --ff-secondary: "acumin-pro";
+
+  --clr-pink: #fa6980;
+  --clr-dark: #202124;
+  --clr-grey: #a6adb4;
+
+  --fs-big: 1.5rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.8125rem;
+}
+
+@media (min-width: 480px) {
+    
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .header__menu {
+    gap: 40px;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .nav__list-wrapper {
+    gap: 27px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
