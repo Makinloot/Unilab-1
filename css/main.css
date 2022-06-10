@@ -1,0 +1,22 @@
+:root {
+    --ff-primary: 'helvetica';
+    --ff-secondary: 'acumin-pro';
+
+    --clr-pink: #FA6980;
+    --clr-dark: #202124;
+    --clr-grey: #A6ADB4;
+
+    --fs-big: 1.5rem;
+    --fs-medium: 1rem;
+    --fs-small: 0.8125rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+    font-size: 100%;
+}
