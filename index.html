@@ -10,13 +10,16 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- HEADER CONTENT -->
     <header class="header flex">
       <div class="wrapper header__wrapper flex">
+        <!-- BURGER MENU -->
         <div class="burger">
           <img src="./images/menu-icon.png" alt="menu icon" />
         </div>
         <a class="logo__text" href="index.html">logo</a>
         <div class="header__menu flex">
+            <!-- NAVBAR -->
           <nav class="nav-bar">
             <ul class="nav__list-wrapper flex">
               <li class="nav-item"><a href="index.html">home</a></li>
@@ -31,10 +34,12 @@
         </div>
       </div>
     </header>
-
+    <!-- MAIN CONTENT -->
     <main class="main">
       <div class="wrapper main__wrapper">
+        <!-- SECTION 1 -->
         <section class="section-1">
+            <!-- SECTION 1 NEWS -->
           <div class="news-container container">
             <div class="overlay"></div>
             <h2 class="news__heading heading">world news</h2>
@@ -47,10 +52,18 @@
             </p>
             <a href="#" class="btn">learn more</a>
           </div>
+          <!-- SECTION 1 MORE NEWS -->
           <div class="more-news-container container">
-            <h2 class="more-news__heading heading">more news</h2>
+            <div class="box flex">
+                <h2 class="more-news__heading heading">more news</h2>
+                <div class="btn-container flex">
+                    <img src="./images/arrow-back.png" alt="arrow icon">
+                    <img src="./images/arrow.png" alt="arrow icon">
+                </div>
+            </div>
+            <!-- ARTICLES -->
             <div class="news__article-box">
-              <div class="article">
+              <div class="news__article article">
                 <h3 class="article__heading heading">travel</h3>
                 <h4 class="article__title">Article title</h4>
                 <p class="article__text">
@@ -62,7 +75,7 @@
                   <p>2m ago</p>
                 </div>
               </div>
-              <div class="article">
+              <div class="news__article article">
                 <h3 class="article__heading heading">technology</h3>
                 <h4 class="article__title">Article title</h4>
                 <p class="article__text">
@@ -76,6 +89,58 @@
               </div>
             </div>
           </div>
+        </section>
+        <section class="section-2">
+            <div class="trending-container container flex">
+                <div class="trending__box box flex">
+                    <h2 class="trending__heading heading">trending</h2>
+                    <div class="btn-container flex">
+                        <img src="./images/arrow-back.png" alt="arrow icon">
+                        <img src="./images/arrow.png" alt="arrow icon">
+                    </div>
+                </div>
+                <div class="trending__article-box flex">
+                    <div class="trending__article article">
+                        <div class="article__img">
+                            <img src="./images/article-1.jpg" alt="article image">
+                        </div>
+                        <div class="article__trend-text">
+                            <h4 class="article__title">Dolore magna aliqua</h4>
+                            <p class="article__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                            <div class="article__details flex">
+                                <img src="./images/clock-icon.png" alt="clock icon" />
+                                <p>2m ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending__article article">
+                        <div class="article__img">
+                            <img src="./images/article-2.jpg" alt="article image">
+                        </div>
+                        <div class="article__trend-text">
+                            <h4 class="article__title">Morbi eleifend a libero</h4>
+                            <p class="article__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                            <div class="article__details flex">
+                                <img src="./images/clock-icon.png" alt="clock icon" />
+                                <p>1h ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending__article article">
+                        <div class="article__img">
+                            <img src="./images/article-3.jpg" alt="article image">
+                        </div>
+                        <div class="article__trend-text">
+                            <h4 class="article__title">Morbi eleifend a libero</h4>
+                            <p class="article__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.</p>
+                            <div class="article__details flex">
+                                <img src="./images/clock-icon.png" alt="clock icon" />
+                                <p>1h ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
       </div>
     </main>
