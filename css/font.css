@@ -37,3 +37,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'acumin-pro-bold';
+    src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
+        url('../fonts/AcuminPro-Bold.woff') format('woff'),
+        url('../fonts/AcuminPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
