@@ -101,7 +101,6 @@
   background-image: url(../images/overlay.png);
   user-select: none;
   pointer-events: none;
-  z-index: -1;
 }
 /* NEWS STYLES */
 .news-container {
@@ -110,7 +109,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: -2;
 }
 
 hr {
@@ -123,7 +121,8 @@ hr {
   display: inline-block;
 }
 
-.news__title {
+.news__title,
+.hero__title {
   margin: 0 0 60px 0;
   font-size: var(--fs-big);
 }
@@ -139,6 +138,7 @@ hr {
   padding: 15px 38px;
   background-color: var(--clr-pink);
   border-radius: 0.5rem;
+  border: none;
   color: var(--clr-white);
   text-transform: uppercase;
 }
@@ -298,3 +298,115 @@ hr {
 .footer {
   display: none;
 }
+
+/* MORE.HTML STYLES */
+.more__header {
+  margin-bottom: 35px;
+}
+
+.box__items {
+  display: none;
+}
+
+.hero-section {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.hero__box {
+  margin: 0 0 50px 0;
+  padding: 0 .3rem;
+}
+
+.hero__container {
+  min-height: 400px;
+
+  width: 460px;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--clr-white);
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__heading {
+  font-size: 32px;
+}
+
+.hero__text {
+  margin: 0 0 40px;
+  max-width: 360px;
+}
+
+.hr {
+  margin: 20px 0;
+  max-width: 40px;
+  border: 1px solid var(--clr-pink);
+}
+
+.items__text {
+  margin: 0 0 0 30px;
+  gap: 20px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  font-size: var(--fs-small);
+  color: var(--clr-dark);
+}
+
+.items__text p:nth-last-child(1) {
+  color: var(--clr-grey);
+  font-family: var(--ff-s-bold);
+}
+
+.more-news-container {
+  padding: 0;
+  margin: 60px auto;
+}
+
+.form {
+  max-width: 446px;
+}
+.form,
+.input-field__wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.input-field__wrapper {
+  width: 100%;
+  gap: 10px;
+}
+
+.input-field__wrapper label {
+  font-family: var(--ff-s-bold);
+  font-size: var(--fs-small);
+}
+
+.date-input,
+.free-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  color: #20212460;
+  outline: none;
+  border: 1px solid rgba(2, 2, 2, 0.205);
+  border-radius: .5rem;
+}
+
+.search-btn {
+  font-size: var(--fs-small);
+  padding: 1rem 1.5rem;
+}
+
+
+
+
