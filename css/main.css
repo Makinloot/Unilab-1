@@ -407,6 +407,27 @@ hr {
   padding: 1rem 1.5rem;
 }
 
+.user-article__wrapper {
+  flex-direction: column;
+}
 
+.user-article__heading {
+  margin: 30px 0;
+  font-family: var(--ff-s-bold);
+}
+
+.user-article__text {
+  font-family: var(--ff-p-regular);
+  font-size: .875rem;
+  line-height: 1.5rem;
+}
+
+.user-article__text-wrapper p:nth-last-child(2) {
+  margin: 0 0 20px 0;
+}
+
+.user-article__details {
+  margin-bottom: 80px;
+}
 
 

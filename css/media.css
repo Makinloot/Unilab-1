@@ -217,6 +217,28 @@
   .free-input {
     width: 446px;
   }
+
+  .user-article__heading {
+    max-width: 335px;
+  }
+
+  .user-article__text-wrapper {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    gap: 50px;
+  }
+
+  .user-article__text {
+    max-width: 280px;
+  }
+
+  .user-article__details {
+    /* position: absolute;
+    bottom: 0;
+    right: 330px; */
+  }
 }
 
 @media (min-width: 1024px) {
@@ -354,6 +376,20 @@
   .date-input,
   .free-input {
     max-width: 380px;
+  }
+
+  .user-article__wrapper {
+    margin: 80px 0;
+  }
+
+  .flex-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-article__text {
+    max-width: 360px;
   }
 
 }
