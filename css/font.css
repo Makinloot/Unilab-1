@@ -1,49 +1,49 @@
 @font-face {
-    font-family: 'helvetica-bold';
-    src: url('../fonts/Helvetica-Bold.woff2') format('woff2'),
-        url('../fonts/Helvetica-Bold.woff') format('woff'),
-        url('../fonts/Helvetica-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "helvetica-bold";
+  src: url("../fonts/Helvetica-Bold.woff2") format("woff2"),
+    url("../fonts/Helvetica-Bold.woff") format("woff"),
+    url("../fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'helvetica';
-    src: url('../fonts/Helvetica.woff2') format('woff2'),
-        url('../fonts/Helvetica.woff') format('woff'),
-        url('../fonts/Helvetica.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "helvetica";
+  src: url("../fonts/Helvetica.woff2") format("woff2"),
+    url("../fonts/Helvetica.woff") format("woff"),
+    url("../fonts/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'helvetica-obl';
-    src: url('../fonts/Helvetica-Oblique.woff2') format('woff2'),
-        url('../fonts/Helvetica-Oblique.woff') format('woff'),
-        url('../fonts/Helvetica-Oblique.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "helvetica-obl";
+  src: url("../fonts/Helvetica-Oblique.woff2") format("woff2"),
+    url("../fonts/Helvetica-Oblique.woff") format("woff"),
+    url("../fonts/Helvetica-Oblique.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'acumin-pro';
-    src: url('../fonts/AcuminPro-Regular.woff2') format('woff2'),
-        url('../fonts/AcuminPro-Regular.woff') format('woff'),
-        url('../fonts/AcuminPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "acumin-pro";
+  src: url("../fonts/AcuminPro-Regular.woff2") format("woff2"),
+    url("../fonts/AcuminPro-Regular.woff") format("woff"),
+    url("../fonts/AcuminPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'acumin-pro-bold';
-    src: url('../fonts/AcuminPro-Bold.woff2') format('woff2'),
-        url('../fonts/AcuminPro-Bold.woff') format('woff'),
-        url('../fonts/AcuminPro-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "acumin-pro-bold";
+  src: url("../fonts/AcuminPro-Bold.woff2") format("woff2"),
+    url("../fonts/AcuminPro-Bold.woff") format("woff"),
+    url("../fonts/AcuminPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
