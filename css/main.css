@@ -413,7 +413,7 @@ hr {
 .user-article__wrapper {
   position: relative;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin: 130px 0 100px 0;
 }
 
 .user-article__heading {
