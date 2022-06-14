@@ -224,6 +224,7 @@
   .more-news-container {
     padding-left: 80px;
     margin: 0 0 60px;
+    margin: 0 auto;
   }
 
   .date-input,
@@ -323,6 +324,10 @@
     column-gap: 10%;
   }
 
+  .box {
+
+  }
+
   .now__box {
     grid-area: header;
   }
@@ -399,6 +404,10 @@
   .more-news-container {
     padding: 0 0 0 20px;
     max-width: 360px;
+  }
+
+  .more-news-container .box {
+    margin: 40px 0;
   }
 
   .form {
