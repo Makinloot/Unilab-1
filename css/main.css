@@ -30,6 +30,11 @@
   --fs-small: 0.8125rem;
   --fs-extraSmall: 0.6875rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* CUSTOM CLASSES */
 .flex {
   display: flex;
@@ -504,6 +509,7 @@ hr {
   font-size: var(--fs-extraSmall);
   text-transform: uppercase;
   z-index: 100;
+  transition: all .3s;
 }
 
 .burger__menu-wrapper.active {
