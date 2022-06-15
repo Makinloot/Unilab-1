@@ -156,12 +156,28 @@
   }
 
   .footer__list-item a {
+    position: relative;
     font-size: var(--fs-small);
     color: #cbd0d3;
   }
 
+  .footer__list-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    width: 0%;
+    border: 1px solid;
+    display: none;
+  }
+
   .footer__list-item a:hover {
     color: var(--clr-white);
+  }
+
+  .footer__list-item a:hover::after {
+    width: 100%;
+    display: block;
   }
 
   .footer__input-wrapper {

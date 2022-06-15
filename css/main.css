@@ -87,11 +87,29 @@ html {
 }
 
 .nav-item a {
+  position: relative;
   color: var(--clr-link);
 }
 
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0%;
+  border: 1px solid;
+  bottom: -.3rem;
+  display: none;
+}
+
+
 .nav-item a:hover {
   color: var(--clr-hover);
+}
+
+
+.nav-item a:hover::after {
+  display: block;
+  width: 100%;
 }
 
 /* MAIN STYLES */
@@ -149,6 +167,7 @@ hr {
   color: var(--clr-white);
   text-transform: uppercase;
 }
+
 /* MORE NEWS STYLES */
 .box {
   margin: 0 0 80px 0;
@@ -483,22 +502,6 @@ hr {
 .hero__container {
   width: 100vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .burger__menu-wrapper {
   position: absolute;
