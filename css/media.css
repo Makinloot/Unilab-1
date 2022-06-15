@@ -476,4 +476,8 @@
   .pages-wrapper {
     display: none;
   }
+
+  .api__article {
+    margin: 1rem 0;
+  }
 }

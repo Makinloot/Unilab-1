@@ -13,8 +13,6 @@ window.onclick = (e) => {
   }
 };
 
-// P1D6-MBRM-AG4C-00TJ key
-
 fetchApi();
 async function fetchApi() {
   const user_res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -48,19 +46,23 @@ function fetchUser(user_data, photo_data, post_data) {
 
     const photoData = {
       title: photo_data[i].title,
-      url: photo_data[i].thumbnailUrl
+      thumb_url: photo_data[i].thumbnailUrl,
+      url: photo_data[i].url
     }
 
     const root = document.createElement('div');
     root.classList.add('api__article', 'flex');
     root.innerHTML = `
-      <img class='api__img' src=${photoData.url} title=${photoData.title} alt='user img'>
+      <img class='api__img' src=${photoData.thumb_url} title=${photoData.title} alt='user img'>
       <strong>${userData.name}</strong>
       <h2 class='api__text-title'>${postData.title}</h2>
       <p class='api__text'>${postData.body}</p>
       <p class='api__loc-text'>From: ${userData.location}</p>
     `
-    userWrapper.appendChild(root);
+    const img = document.createElement('img');
+    img.setAttribute('src', photoData.url);
+    img.classList.add(`api__art-img-${i}`)
+    userWrapper.append(root, img);
 
   }
 }
