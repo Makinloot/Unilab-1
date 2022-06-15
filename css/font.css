@@ -24,7 +24,6 @@
     url("../fonts/Helvetica-Oblique.woff") format("woff"),
     url("../fonts/Helvetica-Oblique.ttf") format("truetype");
   font-weight: normal;
-  font-style: italic;
   font-display: swap;
 }
 

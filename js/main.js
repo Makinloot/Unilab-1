@@ -7,10 +7,62 @@ window.onclick = (e) => {
   if (!openMenu && e.target == burger) {
     burgerContent.classList.add("active");
     openMenu = true;
-    console.log("opened");
   } else if (openMenu && e.target !== burgerContent) {
     burgerContent.classList.remove("active");
     openMenu = false;
-    console.log("closed");
   }
 };
+
+// P1D6-MBRM-AG4C-00TJ key
+
+fetchApi();
+async function fetchApi() {
+  const user_res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const user_data = await user_res.json();
+  console.log(user_data);
+  const posts_res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts_data = await posts_res.json();
+  console.log(posts_data);
+  const photos_res = await fetch("https://jsonplaceholder.typicode.com/photos");
+  const photos_data = await photos_res.json();
+  console.log(photos_data);
+
+  fetchUser(user_data, photos_data, posts_data)
+  // fetchImg(data);
+}
+
+function fetchUser(user_data, photo_data, post_data) {
+  const userWrapper = document.getElementById('our-users');
+  for(let i = 0; i < 3; i++){
+    const userData = {
+      name: user_data[i].name,
+      username: user_data[i].username,
+      location: user_data[i].address.city,
+      company: user_data[i].company.name
+    }
+
+    const postData = {
+      title: post_data[i].title,
+      body: post_data[i].body
+    }
+
+    const photoData = {
+      title: photo_data[i].title,
+      url: photo_data[i].thumbnailUrl
+    }
+
+    const root = document.createElement('div');
+    root.classList.add('api__article', 'flex');
+    root.innerHTML = `
+      <img class='api__img' src=${photoData.url} title=${photoData.title} alt='user img'>
+      <strong>${userData.name}</strong>
+      <h2 class='api__text-title'>${postData.title}</h2>
+      <p class='api__text'>${postData.body}</p>
+      <p class='api__loc-text'>From: ${userData.location}</p>
+    `
+    userWrapper.appendChild(root);
+
+  }
+}
+
+
