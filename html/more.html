@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -15,21 +15,68 @@
       <div class="wrapper header__wrapper flex">
         <!-- BURGER MENU -->
         <div class="burger">
-          <img src="./images/menu-icon.png" alt="menu icon" />
+          <img src="../images/menu-icon.png" alt="menu icon" id="burger" />
         </div>
-        <a class="logo__text" href="index.html">logo</a>
+        <a class="logo__text" href="../index.html">logo</a>
         <div class="header__menu flex">
           <!-- NAVBAR -->
           <nav class="nav-bar">
             <ul class="nav__list-wrapper flex">
-              <li class="nav-item"><a href="index.html">home</a></li>
+              <li class="nav-item"><a href="../index.html">home</a></li>
               <li class="nav-item"><a href="#">discovery</a></li>
               <li class="nav-item"><a href="./photos.html">photos</a></li>
               <li class="nav-item"><a href="#">contact</a></li>
             </ul>
           </nav>
           <div class="user-img">
-            <img src="./images/user.png" alt="user image icon" />
+            <img src="../images/user.png" alt="user image icon" />
+          </div>
+        </div>
+      </div>
+      <div class="burger__menu-wrapper" id="burger-content">
+        <p class="burger__logo logo__text">logo</p>
+        <nav class="burger__nav-bar">
+          <div class="burger__nav-item nav-item flex">
+            <img src="../images/home.png" alt="home icon" />
+            <a href="../index.html">home</a>
+          </div>
+          <div class="burger__nav-item nav-item flex">
+            <img src="../images/discover.png" alt="compass icon" />
+            <a href="#">discovery</a>
+          </div>
+          <div class="burger__nav-item nav-item flex">
+            <img src="../images/photos.png" alt="photos icon" />
+            <a href="./photos.html">photos</a>
+          </div>
+          <div class="burger__nav-item nav-item flex">
+            <img src="../images/contact.png" alt="mail-box icon" />
+            <a href="#">contact</a>
+          </div>
+          <div class="burger__nav-item nav-item flex">
+            <img src="../images/user.png" alt="user icon" />
+            <a href="#l">profile</a>
+          </div>
+        </nav>
+        <div class="burger__footer">
+          <div class="burger__footer-list-wrapper flex">
+            <ul class="burger__footer-list flex">
+              <a class="burger__footer-list-item" href="#">about</a>
+              <a class="burger__footer-list-item" href="#">help</a>
+              <a class="burger__footer-list-item" href="#">terms</a>
+              <a class="burger__footer-list-item" href="#">guidlines</a>
+            </ul>
+            <ul class="burger__footer-list flex">
+              <a class="burger__footer-list-item" href="#">testimonials</a>
+              <a class="burger__footer-list-item" href="#">advertise</a>
+              <a class="burger__footer-list-item" href="#">integrations</a>
+              <a class="burger__footer-list-item" href="#">careers</a>
+            </ul>
+          </div>
+          <div class="burger__social-icons flex">
+            <img src="../images/instagram.png" alt="instagram icon" />
+            <img src="../images/twitter.png" alt="twitter icon" />
+            <img src="../images/facebook.png" alt="facebook icon" />
+            <img src="../images/web.png" alt="web icon" />
           </div>
         </div>
       </div>
@@ -37,12 +84,12 @@
     <main class="main">
       <div class="wrapper">
         <div class="hero__box box flex">
-          <a class="prev-icon" href="./index.html">
-            <img src="./images/go-back.png" alt="previous icon" />
+          <a class="prev-icon" href="../index.html">
+            <img src="../images/go-back.png" alt="previous icon" />
           </a>
           <div class="box__items flex">
-            <a href="./index.html">
-              <img src="./images/home.png" alt="home icon" />
+            <a href="../index.html">
+              <img src="../images/home.png" alt="home icon" />
             </a>
             <div class="items__text flex">
               <p>story</p>
@@ -50,7 +97,7 @@
               <p>world news</p>
             </div>
           </div>
-          <img src="./images/filter.png" alt="filter icon" />
+          <img src="../images/filter.png" alt="filter icon" />
         </div>
         <section class="hero-section section-1">
           <div class="hero__container flex">
@@ -60,7 +107,7 @@
               Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
               detracto vidit.
             </p>
-            <img src="./images/user-2.png" alt="user icon" />
+            <img src="../images/user-2.png" alt="user icon" />
           </div>
           <!-- SECTION 1 MORE NEWS -->
           <div class="more-news-container container">
@@ -92,7 +139,7 @@
         <section class="user-article__wrapper flex">
           <div class="flex-box">
             <div class="user-article__info">
-              <img src="./images/user-2.png" alt="user icon" />
+              <img src="../images/user-2.png" alt="user icon" />
               <h2 class="user-article__heading heading">
                 Phasellus eu nulla malesuada, luctus diam.
               </h2>
@@ -117,7 +164,7 @@
                   ropeior architecto opil beatae vitae dictaeol sunt explicabo.
                 </p>
                 <div class="user-article__details article__details flex">
-                  <img src="./images/clock-icon.png" alt="clock icon" />
+                  <img src="../images/clock-icon.png" alt="clock icon" />
                   <p>2m ago</p>
                 </div>
               </div>
@@ -127,7 +174,7 @@
             class="user-article__text-wrapper user-article__text-wrapper-secondary"
           >
             <div class="user-article__img">
-              <img src="./images/article-elephant.jpg" alt="elephant in dust" />
+              <img src="../images/car.png" alt="animated car" />
             </div>
             <p
               class="user-article__text user-article__text-secondary sec-user article__text"
@@ -169,19 +216,21 @@
             <span>04</span>
             <span>05</span>
             <span>06</span>
-            <img src="./images/More.png" alt="more pages icon" />
+            <img src="../images/More.png" alt="more pages icon" />
           </div>
         </section>
       </div>
     </main>
     <footer class="footer flex">
       <div class="wrapper footer__wrapper">
-        <a class="footer__logo-text" href="index.html">logo</a>
+        <a class="footer__logo-text" href="../index.html">logo</a>
         <div class="footer__list-wrapper">
           <ul class="footer__list">
-            <li class="footer__list-item"><a href="index.html">home</a></li>
+            <li class="footer__list-item"><a href="../index.html">home</a></li>
             <li class="footer__list-item"><a href="#">discovery</a></li>
-            <li class="footer__list-item"><a href="./photos.html">photos</a></li>
+            <li class="footer__list-item">
+              <a href="./photos.html">photos</a>
+            </li>
             <li class="footer__list-item"><a href="#">contact</a></li>
           </ul>
           <ul class="footer__list">
@@ -208,16 +257,17 @@
           <p>Stay in touch with us for the freshest products!</p>
         </div>
         <div class="footer__social-icons flex">
-          <img src="./images/instagram.png" alt="instagram icon" />
-          <img class="twitter" src="./images/twitter.png" alt="twitter icon" />
+          <img src="../images/instagram.png" alt="instagram icon" />
+          <img class="twitter" src="../images/twitter.png" alt="twitter icon" />
           <img
             class="facebook"
-            src="./images/facebook.png"
+            src="../images/facebook.png"
             alt="facebook icon"
           />
-          <img src="./images/web.png" alt="web icon" />
+          <img src="../images/web.png" alt="web icon" />
         </div>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>
