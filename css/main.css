@@ -451,6 +451,10 @@ hr {
   border-radius: 0.5rem;
 }
 
+.date-input {
+  padding: 1rem;
+}
+
 .search-btn {
   font-size: var(--fs-small);
   padding: 1rem 1.5rem;

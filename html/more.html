@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../images/head-icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/head-icon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../css/font.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/media.css" />
@@ -115,16 +119,24 @@
             <form action="#" class="form flex">
               <div class="input-field__wrapper flex">
                 <label for="date">Select a date</label>
-                <input
-                  class="date-input"
-                  type="date"
-                  id="date"
-                  placeholder="Select..."
-                />
+                <select class="date-input" name="Select..." id="date">
+                  <option value="season">Spring</option>
+                  <option value="season">Summer</option>
+                  <option value="season">Fall</option>
+                  <option value="season">Winter</option>
+                </select>
               </div>
               <div class="input-field__wrapper flex">
                 <label for="free-text">Enter the first keywords</label>
-                <input class="free-input" type="text" id="free-text" />
+                <input
+                  class="free-input"
+                  type="text"
+                  id="free-text"
+                  required
+                  minlength="4"
+                  maxlength="16"
+                  autocomplete="off"
+                />
               </div>
               <div class="input-field__wrapper flex">
                 <input
