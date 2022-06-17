@@ -548,8 +548,28 @@ hr {
   box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.5);
 }
 
+.burger__logo-wrapper {
+  position: relative;
+}
+
 .burger__logo {
   margin: 40px 0 90px 40px;
+}
+
+#close-burger {
+  position: absolute;
+  top: 0rem;
+  right: 2rem;
+
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  
+  background-image: url(../images/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .burger__nav-bar {
